@@ -1,0 +1,12 @@
+box -1, -1, 8, 5
+
+A B C D square
+A B E equilateral
+C B F equilateral
+
+draw
+  line(E, F) dashed, darkgray
+  (A.B.C.D)
+  A.E.B
+  C.F.B
+end

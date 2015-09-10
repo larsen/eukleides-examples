@@ -1,0 +1,20 @@
+box -1, -1, 7, 3
+
+A B C isosceles
+H = projection(C, line(A, B))
+
+draw
+ (A.B.C)
+  C.H dashed
+  H
+end
+
+label
+  B, H, C right
+  B, A, C double
+  C, B, A double
+  A.H
+  B.H
+  A.C double
+  C.B double
+end

@@ -1,0 +1,13 @@
+O = point(2, 2)
+C = circle(O, 2)
+A = point(6.5, 2)
+
+c = circle(O.A)
+I.J = intersection(C, c)
+
+draw
+  line(A, I) gray
+  line(A, J) gray
+  C ; c dashed, gray
+  O plus ; A
+end

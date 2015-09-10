@@ -1,0 +1,15 @@
+box -1, -1, 7, 4
+
+vertical a(#A, -2, 10, 170) = 170
+
+c = circle(point(3, 0), 3)
+P = point(c, a°)
+M = point(0, 0)
+N = point(6, 0)
+
+draw
+  (M.N.P)
+  c 0° 180° gray
+end
+
+label M, P, N right, 0.6

@@ -1,0 +1,7 @@
+box -4, -4, 4, 4
+
+locus s(t = 0 to 3*360 step 360)
+  put point(t/360, t°)
+end
+
+draw s

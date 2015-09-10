@@ -1,0 +1,30 @@
+box -3, -4, 7, 8
+
+e = ellipse(point(0,0), 2, 1, 0 rad)
+
+A = point(e, 0 rad)
+B = point(e, pi/5 rad)
+C = point(e, 2*pi/3 rad)
+D = point(e, pi rad)
+E = point(e, 3*pi/2 rad)
+F = point(e, 11*pi/6 rad)
+
+AB = line(A, B)
+BC = line(B, C)
+CD = line(C, D)
+DE = line(D, E)
+EF = line(E, F)
+FA = line(F, A)
+
+I = intersection(AB,DE)
+J = intersection(FA,CD)
+
+draw dashed, gray
+  AB ; BC ; CD ; DE ; EF ; FA
+end
+
+draw
+  line(I, J)
+  (A.B.C.D.E.F) gray
+  e
+end
